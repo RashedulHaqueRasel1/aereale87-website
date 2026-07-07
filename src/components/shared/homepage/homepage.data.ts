@@ -9,6 +9,7 @@ export type StatItem = {
 };
 
 export type BookItem = {
+  href: string;
   image: string;
   imageAlt: string;
   title: string;
@@ -40,11 +41,11 @@ export type FooterColumn = {
 };
 
 export const navItems: NavItem[] = [
-  { href: "#top", label: "HOME" },
-  { href: "#categories", label: "CATEGORIES" },
-  { href: "#shop", label: "SHOP" },
-  { href: "#authors", label: "AUTHORS" },
-  { href: "#about", label: "ABOUT" },
+  { href: "/", label: "HOME" },
+  { href: "/categories", label: "CATEGORIES" },
+  { href: "/categories", label: "SHOP" },
+  { href: "/#authors", label: "AUTHORS" },
+  { href: "/#about", label: "ABOUT" },
 ];
 
 export const stats: StatItem[] = [
@@ -55,6 +56,7 @@ export const stats: StatItem[] = [
 
 export const bestSellers: BookItem[] = [
   {
+    href: "/products/architecture-of-leadership",
     image: "/home/best-seller-1.png",
     imageAlt: "The Architecture of Leadership book cover",
     title: "The Architecture of Leadership",
@@ -64,6 +66,7 @@ export const bestSellers: BookItem[] = [
     badge: "#1 BESTSELLER",
   },
   {
+    href: "/products/whispers-of-the-forest",
     image: "/home/best-seller-2.png",
     imageAlt: "Whispers of the Forest book cover",
     title: "Whispers of the Forest",
@@ -72,6 +75,7 @@ export const bestSellers: BookItem[] = [
     reviews: "(84)",
   },
   {
+    href: "/products/silent-wisdom",
     image: "/home/best-seller-3.png",
     imageAlt: "Silent Wisdom book cover",
     title: "Silent Wisdom",
@@ -80,6 +84,7 @@ export const bestSellers: BookItem[] = [
     reviews: "(210)",
   },
   {
+    href: "/products/journey-within",
     image: "/home/best-seller-4.png",
     imageAlt: "Executive Mindset book cover",
     title: "Executive Mindset",
@@ -91,6 +96,7 @@ export const bestSellers: BookItem[] = [
 
 export const featuredBooks: BookItem[] = [
   {
+    href: "/products/the-silent-echo",
     image: "/home/featured-book-1.png",
     imageAlt: "The Silent Echo book cover",
     title: "The Silent Echo",
@@ -99,6 +105,7 @@ export const featuredBooks: BookItem[] = [
     reviews: "",
   },
   {
+    href: "/products/modern-wisdom",
     image: "/home/featured-book-2.png",
     imageAlt: "Modern Wisdom book cover",
     title: "Modern Wisdom",
@@ -107,6 +114,7 @@ export const featuredBooks: BookItem[] = [
     reviews: "",
   },
   {
+    href: "/products/art-of-focus",
     image: "/home/featured-book-3.png",
     imageAlt: "The Art of Focus book cover",
     title: "The Art of Focus",
@@ -115,6 +123,7 @@ export const featuredBooks: BookItem[] = [
     reviews: "",
   },
   {
+    href: "/products/journey-within",
     image: "/home/featured-book-4.png",
     imageAlt: "Journey Within book cover",
     title: "Journey Within",

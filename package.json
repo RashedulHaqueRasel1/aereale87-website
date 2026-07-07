@@ -6,10 +6,10 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint .",
     "test": "jest",
     "test:watch": "jest --watch",
-    "type-check": "tsc --noEmit",
+    "type-check": "next typegen && tsc --noEmit -p tsconfig.typecheck.json",
     "commit": "cz",
     "prepare": "husky install"
   },
