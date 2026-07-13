@@ -24,7 +24,7 @@ const navMenus: Record<string, { href: string; label: string }[]> = {
 
 export function SiteHeader({
   ctaLabel = "Account",
-  ctaHref = "/cart",
+  ctaHref = "/auth/login",
   activeHref = "/categories",
 }: {
   ctaLabel?: string;
